@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column; /* Stack header on top */
+  height: 100vh; /* Full viewport height */
+}
+
+.mainHeader {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  font-family: "Special Elite", system-ui;
+  font-size: 28px;
+  line-height: 24px;
+  margin-top: 4px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.belowHeader {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.navbar {
+  border-right: 2px solid rgba(10, 10, 10, 0.1);
+  min-height: calc(100vh - 60px);
+  position: relative;
+  height: calc(100% - 60px);
+}
+
+.content {
+  flex-grow: 1; /* Allow the content to grow and fill the remaining space */
+  background-color: white; /* Background color for the content area */
+  overflow: auto; /* Scroll if content is too large */
+}
+.collapseButton {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  right: -15px;
+  top: 50px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid rgba(10, 10, 10, 0.1);
+  transition: background-color 0.3s;
+}
+.collapseButton:hover {
+  background-color: #f1f1f1;
+}
+.navbarMenu {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.active {
+  color: #3a7ff9;
+}
+.menuText {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 56px;
+}
