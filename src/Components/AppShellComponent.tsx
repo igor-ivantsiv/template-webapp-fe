@@ -40,7 +40,7 @@ const AppShellComponent: React.FC = () => {
         </div>
       </div>
       <div className={styles.belowHeader}>
-        <div className={styles.navbar} style={{width: `${navbarWidth}px`}}>
+        <div className={styles.navbar} style={{width: `${navbarWidth}px`, minWidth: `${navbarWidth}px`}}>
           {navbarSmall ? (
             <div className={styles.collapseButton}
               onClick={() => setNavbarSmall(false)}

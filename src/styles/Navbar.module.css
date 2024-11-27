@@ -33,7 +33,6 @@ a {
   border-right: 2px solid rgba(10, 10, 10, 0.1);
   min-height: calc(100vh - 60px);
   position: relative;
-  height: calc(100% - 60px);
 }
 
 .content {
@@ -61,6 +60,7 @@ a {
 .navbarMenu {
   margin-left: 15px;
   margin-right: 15px;
+  height: calc(100% - 60px);
 }
 .active {
   color: #3a7ff9;

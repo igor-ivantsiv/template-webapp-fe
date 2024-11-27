@@ -1,11 +1,17 @@
-import React from 'react'
+import errorImage from "../assets/404.png";
 
-interface Props {}
+interface ErrorPageProps {}
 
-const ErrorPage = ({}: Props) => {
+const ErrorPage = ({}: ErrorPageProps) => {
   return (
-    <div>404</div>
-  )
-}
+    <>
+      <div
+        style={{ display: "flex", justifyContent: "center", margin: "20px" }}
+      >
+        <img style={{ width: "600px" }} src={errorImage} alt="404" />
+      </div>
+    </>
+  );
+};
 
-export default ErrorPage
+export default ErrorPage;

@@ -1,0 +1,45 @@
+.todosPageDiv{
+    margin: 60px;
+}
+.todosDiv{
+    display: flex;
+    gap: 30px;
+}
+.todosListDiv{
+    width: 70%;
+}
+.todosHeader{
+    margin-bottom: 20px;
+}
+.todoContainerDiv{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    align-items:baseline;
+}
+.todoCardDiv{
+    width: 100%;
+}
+.cardContentDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px
+}
+.todoCard{
+    margin-bottom: 16px;
+    border: 1px solid #3a7ff9
+}
+.addTodoDiv{
+    flex: 1;
+}
+.addTodosHeader{
+    margin-bottom: 20px;
+}
+.todoText{
+    overflow: break-word;
+    word-wrap: break-word;
+}
+.cardButtonsDiv{
+    min-width: 82px;
+}
